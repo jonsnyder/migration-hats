@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<head>
+  <title>The Untroubled Hatter</title>
+  <script>
+    window.digitalData = {
+	favoriteColor: "brown"
+    };
+  </script>
+  <script src="https://assets.adobedtm.com/1281f6ff0c59/ff905baa5083/launch-d82d4836e023-development.min.js" async></script>
+</head>
+<html>
+<body>
+
+  <div id="nav">
+    <a href="index.html">Home</a>
+    <a id="cart" href="cart.html">Cart</a>
+  </div>
+  
+  <h1>The Untroubled Hatter</h1>
+  <h3>The place for all hats!</h3>
+
+
+  <h1 id="productTitle">Cowboy</h1>
+  <img src="cowboy.png"/>
+  <button id="addToCart">
+    Add to cart
+  </button>
+
+  <script src="cart.js"></script>
+  <script>
+    document.getElementById("addToCart").onclick = () => {
+	addToCart({
+	    id: "H101",
+	    name: "Cowboy",
+	    quantity: 1,
+	    total: 99.99
+	});
+    };
+  </script>	   
+    
+</body>
+</html>

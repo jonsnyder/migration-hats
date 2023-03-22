@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<head>
+  <title>The Untroubled Hatter</title>
+  <script src="https://assets.adobedtm.com/1281f6ff0c59/ff905baa5083/launch-d82d4836e023-development.min.js" async></script>
+</head>
+<html>
+<body>
+
+  <div id="nav">
+    <a href="index.html">Home</a>
+    <a id="cart" href="cart.html">Cart</a>
+  </div>
+  
+  <h1>The Untroubled Hatter</h1>
+  <h3>The place for all hats!</h3>
+
+
+  <h1>Cart</h1>
+
+  <table>
+    <thead>
+      <tr>
+	<th>Product</th>
+	<th>Quantity</th>
+	<th>Total</th>
+	<th></th>
+      </tr>
+    </thead>
+    <tbody id="cartBody">
+    </tbody>
+  </table>
+  <a href="checkout.html">Checkout</a>
+  
+  <script src="cart.js"></script>
+  <script>
+    renderCartTable();
+  </script>
+    
+</body>
+</html>

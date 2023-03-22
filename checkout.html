@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<head>
+  <title>The Untroubled Hatter</title>
+  <script src="https://assets.adobedtm.com/1281f6ff0c59/ff905baa5083/launch-d82d4836e023-development.min.js" async></script>
+</head>
+<html>
+<body>
+
+  <div id="nav">
+    <a href="index.html">Home</a>
+    <a id="cart" href="cart.html">Cart</a>
+  </div>
+  
+  <h1>The Untroubled Hatter</h1>
+  <h3>The place for all hats!</h3>
+
+
+  <h1>Checkout</h1>
+
+  <h3 id="total"></h3>
+  <form id="checkoutForm" action="purchased.html">
+    <label for="name">Name:</label>
+    <input type="text" name="name"/><br/><br/>
+    <label for="address">Address:</label>
+    <input type="text" name="address"/><br/><br/>
+    <label for="cc">Credit Card:</label>
+    <input type="text" name="cc"/><br/><br/>
+    <input type="submit" value="Purchase"/>
+  </form>
+  
+  <script src="cart.js"></script>
+  <script>
+    renderCheckoutTotal();
+  </script>
+    
+</body>
+</html>
